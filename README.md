@@ -1,2 +1,0 @@
-# eksamen
-vrøgum by
