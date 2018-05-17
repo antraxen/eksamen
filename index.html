@@ -4,35 +4,69 @@
     <meta charset="utf-8">
     <title>dashboard</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   </head>
   <body>
-    <div class="header">
-      <div class="topnav">
+    <div class="omvrøgumsektion">
+    <img src="medie/lyng.jpg" alt="Nature" style="width:100%;">
+    <nav>
         <ul>
           <li><a href="omvrøgum.html">OM VRØGUM</a></li>
           <li><a href="vrøgumløb.html">VRØGUM LØB</a></li>
-          <li><a href="index.html"><img src="medie/logovrogum.png" alt="logo" width=125px>
+          <li><a href="index.html"><img src="medie/logovrogum.png" alt="logo"></a>
           <li><a href="begivenheder.html">BEGIVENHEDER</a></li>
           <li><a href="kontakt.html">KONTAKT</a></li>
         </ul>
-      </div>
-    </div>
+
+ 		</nav>
+
+  <div class="purpletransbox">
+    <h3>VELKOMMEN TIL</h3>
+    <h1>VRØGUM BY</h1>
+    <p>Vrøgum er en lille by hvor alle kender hinanden,<br/>
+som ligger 3 km fra Oksbøl og 10 km fra havet. <br/>
+Vrøgum har et antal af 353 indbyggere. <br/>
+Vrøgum er i sær kendt for Vrøgum løbet, som <br/>
+finder af sted hvert år. Løbet har generelt <br/>
+700-1000 løbere, med en fest efterfølgende. <br/><br/><br/>
+  <a href="omvrøgum.html">læs mere</a> <br/></p>
+</div> </div>
+
+
+
+
+
+<div class="løbbanner">
+  <img src="medie/storloebbanner.jpg" alt="Norway" style="width:100%;">
+  <div class="løbbannertekst"><h1><u>VRØGUM LØB</u></h1>
+  <h3>DELTAG I 2019</h3>
+  <a href="vrøgumløb.html">TILMELD DIG HER</a> <br/></div>
+</div>
+
+<div class="løbbeskrivelse">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br/>
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/>
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br/>
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br/><br/><br/>
+<a href="vrøgumløb.html">TILMELD DIG HER</a> <br/></p></div>
+
+
 
     <div class="slideshowrow">
       <div class="slideshowcolumn">
-        <img src="medie/miniloebesko.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <img src="medie/miniloebesko.jpg" alt="løbesko" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
       </div>
       <div class="slideshowcolumn">
-        <img src="medie/minifaellesloeb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        <img src="medie/minifaellesloeb.jpg" alt="løbesko" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
       </div>
       <div class="slideshowcolumn">
-        <img src="medie/miniparloeb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        <img src="medie/miniparloeb.jpg" alt="løbesko" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
       </div>
       <div class="slideshowcolumn">
-        <img src="medie/miniloebbanner.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        <img src="medie/miniloebbanner.jpg" alt="løbesko" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
       </div>
       <div class="slideshowcolumn">
-        <img src="medie/minimad.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        <img src="medie/minimad.jpg" alt="løbesko" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
       </div>
     </div>
 
@@ -42,27 +76,27 @@
 
         <div class="theSlides">
           <div class="numbertext">1 / 5</div>
-          <img src="medie/miniloebesko.jpg">
+          <img src="medie/miniloebesko.jpg" alt="løbesko">
         </div>
 
         <div class="theSlides">
           <div class="numbertext">2 / 5</div>
-          <img src="medie/minifaellesloeb.jpg">
+          <img src="medie/minifaellesloeb.jpg" alt="løbesko">
         </div>
 
         <div class="theSlides">
           <div class="numbertext">3 / 5</div>
-          <img src="medie/miniparloeb.jpg">
+          <img src="medie/miniparloeb.jpg" alt="løbesko">
         </div>
 
         <div class="theSlides">
           <div class="numbertext">4 / 5</div>
-          <img src="medie/miniloebbanner.jpg">
+          <img src="medie/miniloebbanner.jpg" alt="løbesko">
         </div>
 
         <div class="theSlides">
           <div class="numbertext">5 / 5</div>
-          <img src="medie/minimad.jpg">
+          <img src="medie/minimad.jpg" alt="løbesko">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -89,6 +123,55 @@
           <img class="mini" src="medie/minimad.jpg" onclick="currentSlide(5)" alt="Mad efter løb">
         </div>
       </div>
+    </div>
+
+
+    <p class="andrebegivenheder"><u>ANDRE BEGIVENHEDER</u></p>
+    <div class="greenbox">
+    <div class="contentgrid">
+      <div class="contentgriditem">
+        <img src="medie/fiskeri.jpg" alt="Landskab i en cirkel">
+      </div>
+      <div class="contentgrid_item">
+        <p> <b> FISKERI </b> <br/><br/>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br/>
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/>
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br/>
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br/><br/></p>
+      </div>
+    </div>
+    </div>
+
+    <div class="whitebox">
+    <div class="contentgrid">
+      <div class="contentgriditem">
+        <p> <b> MINIGOLF </b>  <br/><br/>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br/>
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/>
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br/>
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br/><br/>
+    </p>
+      </div>
+      <div class="contentgrid_item">
+        <img src="medie/golfillustration.jpg" alt="Selvprotræt">
+      </div>
+    </div>
+    </div>
+
+    <div class="secondgreenbox">
+    <div class="contentgrid">
+      <div class="contentgriditem">
+        <img src="medie/grill.jpg" alt="Typografi">
+      </div>
+      <div class="contentgrid_item">
+        <p> <b> GRILLAFTEN </b> <br/><br/>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br/>
+          et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/>
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br/>
+          dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br/><br/>
+      </p>
+      </div>
+    </div>
     </div>
 
     <script>

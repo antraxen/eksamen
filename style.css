@@ -1,6 +1,105 @@
 html {
 
   }
+  nav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  position: static;
+  top: 10px;
+  position: absolute;
+  }
+  nav ul {
+    display: block;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+  }
+  nav ul li {
+  display: inline-block;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25pt;
+    text-align: center;
+    padding: 25px;
+  }
+  nav img {
+  width: 125px;
+  }
+
+  .purpletransbox {
+      position: absolute;
+      background-color: rgba(128,78,112,0.55);
+      color: #ffffff;
+      font: 'poppins, medium';
+      font-size: 20pt;
+      margin: auto;
+     	padding: 20px;
+      text-align: center;
+      width: 80%;
+      max-width: 1420px;
+      max-height: 675px;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .purpletransbox a{
+  	color: #ffffff;
+   	background-color: rgb(128,78,112);
+   	text-decoration: none;
+    	color: #ffffff;
+    	text-align: center;
+    	padding: 10px 40px 10px 40px;
+    	border-radius: 40px;
+    	cursor:pointer;
+    }
+
+.løbbanner {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 80%;
+    display: block;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.løbbannertekst {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.løbbannertekst a {
+  color: #ffffff;
+  background-color: rgb(78,96,128);
+  text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    border-radius: 40px;
+    cursor:pointer;
+}
+.løbbeskrivelse {
+  color: #000000;
+  font: 'poppins, medium';
+  font-size: 20pt;
+  margin: auto;
+  text-align: center;
+}
+.løbbeskrivelse a {
+  color: #ffffff;
+  background-color: rgb(78,96,128);
+  text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    border-radius: 40px;
+    cursor:pointer;
+}
 
   /* Lay in a straight line */
 .slideshowcolumn {
@@ -9,7 +108,6 @@ html {
 }
 .slideshowcolumn img {
   width: 100%;
-  max-width: 300px;
   height: auto;
 }
 
@@ -25,7 +123,7 @@ html {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(78,96,128, 0.8);
+  background-color: rgba(78,96,128, 0.9);
   box-sizing: border-box;
 }
 
@@ -131,4 +229,43 @@ img.hover-shadow {
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
+}
+
+.andrebegivenheder {
+  color: rgb(78,128,96);
+  font-family: 'poppins, bold';
+  text-align: center;
+  line-height: 50px;
+  font-size: 30pt;
+}
+.contentgrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  height: 500px;
+}
+.contentgriditem {
+  background-position: center;
+  background-size: contain;
+  flex: auto;
+  text-align: center;
+}
+.greenbox {
+  background-color: rgba(78,128,96,0.25);
+  text-align: center;
+  display: block;
+}
+.whitebox {
+  background-color: #FFFFFF;
+  text-align: center;
+  display: block;
+}
+.secondgreenbox {
+  background-color: rgba(78,128,96,0.25);
+  text-align: center;
+  display: block;
 }
