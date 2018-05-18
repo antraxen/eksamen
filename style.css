@@ -30,7 +30,34 @@ html {
   width: 75px;
   padding: 10px;
   }
-
+  .topnav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  top: 20px;
+  position: absolute;
+  }
+  .topnav ul {
+    display: block;
+    max-width: 80%;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+  }
+  .topnav ul li {
+  display: inline;
+  }
+  .topnav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20pt;
+    text-align: center;
+    padding: 25px;
+  }
+  .topnav img {
+  width: 75px;
+  padding: 10px;
+  }
   .purpletransbox {
       position: absolute;
       background-color: rgba(128,78,112,0.55);
@@ -251,8 +278,6 @@ img.hover-shadow {
   height: 500px;
 }
 .contentgriditem {
-  background-position: center;
-  background-size: contain;
   flex: auto;
   text-align: center;
 }
@@ -274,6 +299,9 @@ img.hover-shadow {
 
 .purplebox {
   background-color: rgba(128,78,112,0.25);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .kontakttitel {
