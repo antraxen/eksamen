@@ -6,16 +6,210 @@
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="header">
-      <div class="topnav">
+    <div class="omvrøgumsektion">
+   <img src="medie/lyng.jpg" alt="Nature" style="width:100%;">
+   <nav>
         <ul>
           <li><a href="omvrøgum.html">OM VRØGUM</a></li>
           <li><a href="vrøgumløb.html">VRØGUM LØB</a></li>
-          <li><a href="index.html"><img src="medier/logovrogum.png" alt="logo">
+          <li><a href="index.html"><img src="medie/logovrogum.png" alt="logo">
           <li><a href="begivenheder.html">BEGIVENHEDER</a></li>
           <li><a href="kontakt.html">KONTAKT</a></li>
         </ul>
       </div>
     </div>
-    
+</nav>
+
+
+<div class="purpletransbox">
+<h3>VELKOMMEN TIL</h3>
+<h1>VRØGUM BY</h1>
+<p>Vrøgum er en lille by hvor alle kender hinanden,<br/>
+som ligger 3 km fra Oksbøl og 10 km fra havet. <br/>
+Vrøgum har et antal af 353 indbyggere. <br/>
+Vrøgum er i sær kendt for Vrøgum løbet, som <br/>
+finder af sted hvert år. Løbet har generelt <br/>
+700-1000 løbere, med en fest efterfølgende. <br/><br/><br/>
+<a href="omvrøgum.html">læs mere</a> <br/></p>
+</div> </div>
+
+
+
+
+
+<div class="løbbanner">
+<img src="medie/storloebbanner.jpg" alt="Norway" style="width:100%;">
+<div class="løbbannertekst"><h1><u>VRØGUM LØB</u></h1>
+<h3>DELTAG I 2019</h3>
+<a href="vrøgumløb.html">TILMELD DIG HER</a> <br/></div>
+</div>
+
+<div class="løbbeskrivelse">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br/>
+et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/>
+aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br/>
+dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br/><br/><br/>
+<a href="vrøgumløb.html">TILMELD DIG HER</a> <br/></p></div>
+    <div class="slideshowrow">
+      <div class="slideshowcolumn">
+        <img src="medie/miniloebesko.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="slideshowcolumn">
+        <img src="medie/minifaellesloeb.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="slideshowcolumn">
+        <img src="medie/miniparloeb.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="slideshowcolumn">
+        <img src="medie/miniloebbanner.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+      <div class="slideshowcolumn">
+        <img src="medie/minimad.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+      </div>
+    </div>
+
+    <div id="theModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="theSlides">
+          <div class="numbertext">1 / 5</div>
+          <img src="medie/miniloebesko.jpg">
+        </div>
+
+        <div class="theSlides">
+          <div class="numbertext">2 / 5</div>
+          <img src="medie/minifaellesloeb.jpg">
+        </div>
+
+        <div class="theSlides">
+          <div class="numbertext">3 / 5</div>
+          <img src="medie/miniparloeb.jpg">
+        </div>
+
+        <div class="theSlides">
+          <div class="numbertext">4 / 5</div>
+          <img src="medie/miniloebbanner.jpg">
+        </div>
+
+        <div class="theSlides">
+          <div class="numbertext">5 / 5</div>
+          <img src="medie/minimad.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+        <div class="slideshowcolumn">
+          <img class="mini" src="medie/miniloebesko.jpg" onclick="currentSlide(1)" alt="Løbesko, vand og håndklæde">
+        </div>
+        <div class="slideshowcolumn">
+          <img class="mini" src="medie/minifaellesloeb.jpg" onclick="currentSlide(2)" alt="Velgørenheds løb">
+        </div>
+        <div class="slideshowcolumn">
+          <img class="mini" src="medie/miniparloeb.jpg" onclick="currentSlide(3)" alt="Par der vandre">
+        </div>
+        <div class="slideshowcolumn">
+          <img class="mini" src="medie/miniloebbanner.jpg" onclick="currentSlide(4)" alt="Par der vandre">
+        </div>
+        <div class="slideshowcolumn">
+          <img class="mini" src="medie/minimad.jpg" onclick="currentSlide(5)" alt="Mad efter løb">
+        </div>
+      </div>
+    </div>
+
+    <p class="andrebegivenheder"><u>ANDRE BEGIVENHEDER</u></p>
+     <div class="greenbox">
+     <div class="contentgrid">
+       <div class="contentgriditem">
+         <img src="medie/fiskeri.jpg" alt="Landskab i en cirkel">
+       </div>
+       <div class="contentgrid_item">
+         <p> <b> FISKERI </b> <br/><br/>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br/>
+           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/>
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br/>
+           dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br/><br/></p>
+       </div>
+     </div>
+     </div>
+
+     <div class="whitebox">
+     <div class="contentgrid">
+       <div class="contentgriditem">
+         <p> <b> MINIGOLF </b>  <br/><br/>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br/>
+           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/>
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br/>
+           dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br/><br/>
+     </p>
+       </div>
+       <div class="contentgrid_item">
+         <img src="medie/golfillustration.jpg" alt="Selvprotræt">
+       </div>
+     </div>
+     </div>
+
+     <div class="secondgreenbox">
+     <div class="contentgrid">
+       <div class="contentgriditem">
+         <img src="medie/grill.jpg" alt="Typografi">
+       </div>
+       <div class="contentgrid_item">
+         <p> <b> GRILLAFTEN </b> <br/><br/>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore <br/>
+           et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br/>
+           aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum <br/>
+           dolore eu fugiat nulla pariatur. Excepteur sint occaecat <br/><br/>
+       </p>
+       </div>
+     </div>
+     </div>
+
+    <script>
+    function openModal() {
+      document.getElementById('theModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('theModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("theSlides");
+      var dots = document.getElementsByClassName("mini");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+    </body>
+    </html>
 </body>
