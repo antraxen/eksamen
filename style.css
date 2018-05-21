@@ -297,6 +297,16 @@ img.hover-shadow {
   text-align: center;
   display: block;
 }
+.secondwhitebox {
+  background-color: #FFFFFF;
+  text-align: center;
+  display: block;
+}
+.thirdgreenbox {
+  background-color: rgba(78,128,96,0.25);
+  text-align: center;
+  display: block;
+}
 .purplebox {
   background-color: rgba(128,78,112,0.25);
   width: 80%;
