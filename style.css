@@ -34,21 +34,20 @@ html {
   margin: auto;
   text-align: center;
   top: 20px;
-  position: absolute;
+  position: static;
   }
   .topnav ul {
-    display: block;
     max-width: 80%;
     list-style-type: none;
     margin: auto;
     padding: 0;
   }
   .topnav ul li {
-  display: inline;
+  display: inline-block;
   }
   .topnav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     font-size: 20pt;
     text-align: center;
     padding: 25px;
