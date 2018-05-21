@@ -1,32 +1,61 @@
 html {
 
   }
-  nav {
+  .imgnav {
   width: 100%;
   margin: auto;
   text-align: center;
-  position: static;
-  top: 10px;
+  top: 20px;
   position: absolute;
   }
-  nav ul {
+  .imgnav ul {
     display: block;
+    max-width: 80%;
     list-style-type: none;
     margin: auto;
     padding: 0;
   }
-  nav ul li {
-  display: inline-block;
+  .imgnav ul li {
+  display: inline;
   }
-  nav ul li a {
+  .imgnav ul li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 25pt;
+    font-size: 20pt;
     text-align: center;
     padding: 25px;
   }
-  nav img {
-  width: 125px;
+  .imgnav img {
+  width: 75px;
+  padding: 10px;
+  }
+  .topnav {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  top: 20px;
+  position: absolute;
+  }
+  .topnav ul {
+    display: block;
+    max-width: 80%;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+  }
+  .topnav ul li {
+  display: inline;
+  }
+  .topnav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20pt;
+    text-align: center;
+    padding: 25px;
+  }
+  .topnav img {
+  width: 75px;
+  padding: 10px;
   }
 
   .purpletransbox {
@@ -268,6 +297,18 @@ img.hover-shadow {
   background-color: rgba(78,128,96,0.25);
   text-align: center;
   display: block;
+}
+.purplebox {
+  background-color: rgba(128,78,112,0.25);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.kontakttitel {
+  text-align: center;
+  font-family: 'poppins,bold';
+  font-size: 30pt;
+  color: rgb(128, 78, 112);
 }
 
 
