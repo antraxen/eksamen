@@ -311,6 +311,12 @@ img.hover-shadow {
   text-align: center;
   display: block;
 }
+.bluebox {
+  background-color: rgba(173,216,230, 0.8);
+  text-align: center;
+  display: block;
+  width: 100%;
+}
 .purplebox {
   background-color: rgba(128,78,112,0.25);
   width: 80%;
