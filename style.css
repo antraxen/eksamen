@@ -1,6 +1,9 @@
 html {
 
   }
+.lyngsektion img {
+  width: 100%;
+}
   .imgnav {
   width: 100%;
   margin: auto;
@@ -56,24 +59,25 @@ html {
   width: 75px;
   padding: 10px;
   }
-
-  .purpletransbox {
+  .lyngsektion {
+    width: 100%;
+    position: relative;
+  }
+  .lyngsektion .purpletransbox {
       position: absolute;
       background-color: rgba(128,78,112,0.55);
       color: #ffffff;
-      font: 'poppins, medium';
+      font-family: 'poppins, medium';
       font-size: 20pt;
       margin: auto;
      	padding: 20px;
       text-align: center;
       width: 80%;
-      max-width: 1420px;
-      max-height: 675px;
       top: 60%;
       left: 50%;
       transform: translate(-50%, -50%);
   }
-  .purpletransbox a{
+  .lyngsektion .purpletransbox a{
   	color: #ffffff;
    	background-color: rgb(128,78,112);
    	text-decoration: none;
