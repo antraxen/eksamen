@@ -359,6 +359,31 @@ img.hover-shadow {
     	cursor:pointer;
     }
 
+    .purplebox {
+  background-color: rgba(128,78,112,0.55);
+  text-align: center;
+  color: white;
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.kontakttitel {
+  text-align: center;
+  font-family: 'poppins,bold';
+  font-size: 30pt;
+  color: #ffffff;
+}
+.omvrøgumtitel {
+  text-align: center;
+  font-family: 'poppins,bold';
+  font-size: 30pt;
+  color: #ffffff;
+}
+
+
 
     .dkloeb {
       width: 100%;
