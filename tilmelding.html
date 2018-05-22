@@ -22,19 +22,32 @@
   <form action="/action_page.php">
 
       <h1>Registrer dig her</h1>
-      <p>Indsæt dit navn og email, så deltager du i begivenheden, nærmere information kommer via den mail du modtager</p>
+      <p>Indsæt dit navn, så deltager du automatisk i begivenheden.</p>
       <hr>
 
 
   <label for="fullnae"><b>navn</b></label>
-      <input type="text" placeholder="Enter your full name" name="full name" required>
-
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
-        <a href ="godkendt.html">LOGIN</a>
+      <input type="text" placeholder="indsæt dit fulde navn" name="full name" required>
+      <button id="myBtn">Tilmeld dig begivenhed</button>
+<p id="demo"></p>
       </div>
     </div>
   </div>
 </div>
 </div>
   </form>
+  <script>
+document.getElementById("myBtn").addEventListener("click", myFunction);
+function myFunction(event) {
+    event.preventDefault();
+    var txt;
+    var person = prompt(" Du er nu tilmeldt begivenheden, venligst insæt din email, hvis du ønsker flere oplysninger omkring begivenheden:", "email");
+    if (person == null || person == "") {
+        txt = "du sagde nej tak til at få flere oplysninger via email, du er dog stadig tilmeldt begivenheden.";
+    } else {
+        txt = "Der er nu sendt en mail til " + person + " med flere oplysninger omkring begivenheden, forsat god dag.";
+    }
+    document.getElementById("demo").innerHTML = txt;
+
+}
+</script>
