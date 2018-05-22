@@ -122,3 +122,45 @@
    </div>
  </div>
  </div>
+
+ <footer>
+     <div class="footeritem">
+       <div class="bottomnav">
+         <ul><h1><b>Navigation:</b></h1>
+           <li><a href="index.html">Forside</a></li>
+           <li><a href="omvrøgum.html">Om Vrøgum</a></li>
+           <li><a href="vrøgumløb.html">Vrøgum Løb</a></li>
+           <li><a href="begivenheder.html">Begivenheder</a></li>
+           <li><a href="kontakt.html">Kontakt</a></li>
+         </ul>
+     </div>
+   </div>
+     <div class="footeritem"><h1><b>Kontakt:</b></h1>
+       <p><b>telefon:</b><br/> 12345678<br/>
+       <b>e-mail:</b><br/> vrøgumby@mail.dk<br/><br/></p>
+     </div>
+     <div class="footeritem"><h1><b>Nyhedsbrev:</b></h1>
+       <p><br/><br/><br/><br/><br/></p>
+ </div>
+ </footer>
+
+ <button onclick="topFunction()" id="scrollBtn" title="Gå til toppen">TOP</button>
+
+ <script>
+ window.onscroll = function() {scrollFunction()};
+
+ function scrollFunction() {
+     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+         document.getElementById("scrollBtn").style.display = "block";
+     } else {
+         document.getElementById("scrollBtn").style.display = "none";
+     }
+ }
+
+ function topFunction() {
+     document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+ }
+</script>
+</body>
+</html>

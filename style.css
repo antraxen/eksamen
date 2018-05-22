@@ -1,127 +1,161 @@
-html {
-
-  }
 .lyngsektion img {
   width: 100%;
 }
-  .imgnav {
+.imgnav {
   width: 100%;
   margin: auto;
   text-align: center;
   top: 20px;
   position: absolute;
-  }
-  .imgnav ul {
-    display: block;
-    max-width: 80%;
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-  }
-  .imgnav ul li {
+}
+.imgnav ul {
+  display: block;
+  max-width: 80%;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+.imgnav ul li {
   display: inline;
-  }
-  .imgnav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20pt;
-    text-align: center;
-    padding: 25px;
-  }
-  .imgnav img {
+}
+.imgnav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20pt;
+  text-align: center;
+  padding: 25px;
+}
+.imgnav ul li a:hover {
+  text-decoration: underline;
+}
+.imgnav img {
   width: 75px;
   padding: 10px;
-  }
-  .topnav {
+}
+.topnav {
   width: 100%;
   margin: auto;
   text-align: center;
   padding-bottom: 20px;
   position: static;
-  }
-  .topnav ul {
-    max-width: 80%;
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-  }
-  .topnav ul li {
+}
+.topnav ul {
+  max-width: 80%;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+}
+.topnav ul li {
   display: inline-block;
-  }
-  .topnav ul li a {
-    text-decoration: none;
-    color: #000000;
-    font-size: 20pt;
-    text-align: center;
-    padding: 25px;
-  }
-  .topnav img {
+}
+.topnav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 20pt;
+  text-align: center;
+  padding: 25px;
+}
+.topnav ul li a:hover {
+  text-decoration: underline;
+}
+.topnav img {
   width: 75px;
   padding: 10px;
-  }
-  .lyngsektion {
-    width: 100%;
-    position: relative;
-  }
-  .lyngsektion .purpletransbox {
-      position: absolute;
-      background-color: rgba(128,78,112,0.55);
-      color: #ffffff;
-      font-family: 'poppins, medium';
-      font-size: 20pt;
-      margin: auto;
-     	padding: 20px;
-      text-align: center;
-      width: 80%;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
-  .lyngsektion .purpletransbox a{
-  	color: #ffffff;
-   	background-color: rgb(128,78,112);
-    border: 5px solid rgb(128,78,112);
-   	text-decoration: none;
-    	text-align: center;
-    	padding: 10px 40px 10px 40px;
-    	border-radius: 40px;
-    	cursor:pointer;
-    }
-    .lyngsektion .purpletransbox a:hover{
-    	color: rgb(128,78,112);
-     	background-color: #ffffff;
-      border: 5px solid rgb(128,78,112);
-    }
+}
+.bottomnav ul {
+  display: block;
+  list-style-type: none;
+}
+.bottomnav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12pt;
+}
+.bottomnav ul li a:hover {
+  text-decoration: underline;
+}
+footer {
+  position: static;
+  height: 300px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+}
+.footeritem {
+  background-position: center;
+  background-size: contain;
+  flex: auto;
+  text-align: center;
+}
+.lyngsektion {
+  width: 100%;
+  position: relative;
+}
+.lyngsektion .purpletransbox {
+  position: absolute;
+  background-color: rgba(128,78,112,0.55);
+  color: #ffffff;
+  font-family: 'poppins, medium';
+  font-size: 20pt;
+  margin: auto;
+	padding: 20px;
+  text-align: center;
+  width: 80%;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lyngsektion .purpletransbox a{
+  color: #ffffff;
+	background-color: rgb(128,78,112);
+  border: 5px solid rgb(128,78,112);
+  text-decoration: none;
+	text-align: center;
+	padding: 10px 40px 10px 40px;
+	border-radius: 40px;
+	cursor:pointer;
+}
+.lyngsektion .purpletransbox a:hover{
+  color: rgb(128,78,112);
+  background-color: #ffffff;
+  border: 5px solid rgb(128,78,112);
+}
 .løbbanner {
-    position: relative;
-    text-align: center;
-    color: white;
-    width: 80%;
-    display: block;
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 80%;
+  display: block;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Får billedet til at være centreret på siden */
 .løbbanner img {
   width: 100%;
 }
 .løbbannertekst {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .løbbannertekst a {
   color: #ffffff;
   background-color: rgb(78,96,128);
   border: 5px solid rgb(78,96,128);
   text-decoration: none;
-    text-align: center;
-    padding: 10px 40px 10px 40px;
-    border-radius: 40px;
-    cursor:pointer;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  border-radius: 40px;
+  cursor:pointer;
 }
 .løbbannertekst a:hover{
   color: rgb(78,96,128);
@@ -140,18 +174,16 @@ html {
   background-color: rgb(78,96,128);
   border: 5px solid rgb(78,96,128);
   text-decoration: none;
-    text-align: center;
-    padding: 10px 40px 10px 40px;
-    border-radius: 40px;
-    cursor:pointer;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  border-radius: 40px;
+  cursor:pointer;
 }
 .løbbeskrivelse a:hover{
   color: rgb(78,96,128);
   background-color: #ffffff;
   border: 5px solid rgb(78,96,128);
 }
-
-
   /* Lay in a straight line */
 .slideshowcolumn {
   float: left;
@@ -163,7 +195,6 @@ html {
   width: 100%;
   height: auto;
 }
-
 /* The Modal (background) */
 .modal {
   display: none;
@@ -179,7 +210,6 @@ html {
   background-color: rgba(78,96,128, 0.9);
   box-sizing: border-box;
 }
-
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -187,7 +217,6 @@ html {
   padding: 0;
   max-width: 500px;
 }
-
 /* The Close Button */
 .close {
   color: white;
@@ -197,17 +226,13 @@ html {
   font-size: 35px;
   font-weight: bold;
 }
-
-.close:hover,
-.close:focus {
+.close:hover, .close:focus {
   color: rgb(78,96,128);
   text-decoration: none;
   cursor: pointer;
 }
-
 /* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -222,19 +247,15 @@ html {
   user-select: none;
   -webkit-user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add the blue color, with a 50% */
-.prev:hover,
-.next:hover {
+.prev:hover, .next:hover {
   background-color: rgba(78,96,128, 0.5);
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #ffffff;
@@ -243,47 +264,38 @@ html {
   position: absolute;
   top: 0;
 }
-
 .caption-container {
   text-align: center;
   background-color: rgb(78,96,128);
   padding: 2px 16px;
   color: #ffffff;
 }
-
 .mini {
   opacity: 0.5;
 }
-
-.active,
-.mini:hover {
+.active, .mini:hover {
   opacity: 1;
 }
-
 img.hover-shadow {
   transition: 0.3s;
 }
-
 .hover-shadow:hover {
  opacity: 0.5;
 }
-
 .modal-content {
     -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
+    -webkit-animation-duration: 0.5s;
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 0.5s;
 }
 @-webkit-keyframes zoom {
     from {-webkit-transform:scale(0)}
     to {-webkit-transform:scale(1)}
 }
-
 @keyframes zoom {
     from {transform:scale(0)}
     to {transform:scale(1)}
 }
-
 .andrebegivenheder {
   color: rgb(78,128,96);
   font-family: 'poppins, bold';
@@ -300,31 +312,31 @@ img.hover-shadow {
   align-items: center;
   margin: auto;
   height: 500px;
+  width: 80%;
 }
-.contentgriditem {
+.contentgrid .contentgriditem {
   background-position: center;
   background-size: contain;
   flex: auto;
   text-align: center;
 }
-.contentgriditem a {
+.contentgrid .contentgriditem a {
   color: #ffffff;
   background-color: rgb(78,128,96);
   border: 5px solid rgb(78,128,96);
-
   text-decoration: none;
-    text-align: center;
-    padding: 10px 40px 10px 40px;
-    border-radius: 40px;
-    cursor:pointer;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
+  border-radius: 40px;
+  cursor:pointer;
 }
-.contentgriditem a:hover{
+.contentgrid .contentgriditem a:hover{
   color: rgb(78,128,96);
   background-color: #ffffff;
   border: 5px solid rgb(78,128,96);
 }
 .greenbox {
-  background-color: rgba(78,128,96,0.50);
+  background-color: rgba(78,128,96,0.5);
   color: #ffffff;
   text-align: center;
   display: block;
@@ -335,7 +347,8 @@ img.hover-shadow {
   display: block;
 }
 .secondgreenbox {
-  background-color: rgba(78,128,96,0.25);
+  background-color: rgba(78,128,96,0.5);
+  color: #ffffff;
   text-align: center;
   display: block;
 }
@@ -345,18 +358,18 @@ img.hover-shadow {
   display: block;
 }
 .thirdgreenbox {
-  background-color: rgba(78,128,96,0.25);
+  background-color: rgba(78,128,96,0.5);
   text-align: center;
   display: block;
 }
 .bluebox {
-  background-color: rgba(173,216,230, 0.8);
+  background-color: rgba(173,216,230, 0.5);
   text-align: center;
   display: block;
   width: 100%;
 }
 .purplebox {
-  background-color: rgba(128,78,112,0.55);
+  background-color: rgba(128,78,112,0.5);
   text-align: center;
   color: white;
   width: 80%;
@@ -378,51 +391,65 @@ img.hover-shadow {
   font-size: 30pt;
   color: #ffffff;
 }
+.bluetransbox {
+  position: absolute;
+  background-color: rgba(78,96,128,0.5);
+  color: #ffffff;
+  font: 'poppins, medium';
+  font-size: 20pt;
+  margin: auto;
+ 	padding: 20px;
+  text-align: center;
+  width: 80%;
+  max-width: 1420px;
+  max-height: 675px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bluetransbox a{
+  color: #ffffff;
+	background-color: rgb(78,96,128);
+	text-decoration: none;
+  text-align: center;
+	padding: 10px 40px 10px 40px;
+  border-radius: 40px;
+	cursor:pointer;
+}
+.dkloeb {
+  width: 100%;
+  position: absolute;
+}
+.dkloeb h1{
+  color: rgb(78,96,128);
+  text-decoration: none;
+  text-align: center;
+}
+.bluebox {
+  background-color: rgba(78,128,96,0.5);
+  text-align: center;
+  position: absolute;
+}
+.minigolfproduktion img{
+  width: 100%;
+}
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-family: 'poppins, bold';
+  font-size: 20px;
+  border: none;
+  background-color: rgb(0,0,0);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+}
 
-  .bluetransbox {
-      position: absolute;
-      background-color: rgba(78,96,128,0.55);
-      color: #ffffff;
-      font: 'poppins, medium';
-      font-size: 20pt;
-      margin: auto;
-     	padding: 20px;
-      text-align: center;
-      width: 80%;
-      max-width: 1420px;
-      max-height: 675px;
-      top: 60%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
-  .bluetransbox a{
-  	color: #ffffff;
-   	background-color: rgba(78,96,128,1);
-   	text-decoration: none;
-    	color: #ffffff;
-    	text-align: center;
-    	padding: 10px 40px 10px 40px;
-    	border-radius: 40px;
-    	cursor:pointer;
-    }
-
-    .dkloeb {
-      width: 100%;
-    position: absolute;
-
-    }
-
-    .dkloeb h1{
-      color: rgba(78,96,128,1);
-      text-decoration: none;
-      text-align: center;
-    }
-
-    .bluebox {
-      background-color: rgba(78,128,96,0.25);
-      text-align: center;
-      position: absolute;
-    }
-    .minigolfproduktion img{
-      width: 100%;
-    }
+#scrollBtn:hover {
+  background-color: rgba(0,0,0,0.5);
+  color: #ffffff;
+}
