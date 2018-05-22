@@ -36,7 +36,7 @@ html {
   width: 100%;
   margin: auto;
   text-align: center;
-  top: 20px;
+  padding-bottom: 20px;
   position: static;
   }
   .topnav ul {
@@ -80,14 +80,18 @@ html {
   .lyngsektion .purpletransbox a{
   	color: #ffffff;
    	background-color: rgb(128,78,112);
+    border: 5px solid rgb(128,78,112);
    	text-decoration: none;
-    	color: #ffffff;
     	text-align: center;
     	padding: 10px 40px 10px 40px;
     	border-radius: 40px;
     	cursor:pointer;
     }
-
+    .lyngsektion .purpletransbox a:hover{
+    	color: rgb(128,78,112);
+     	background-color: #ffffff;
+      border: 5px solid rgb(128,78,112);
+    }
 .løbbanner {
     position: relative;
     text-align: center;
@@ -99,6 +103,10 @@ html {
     margin-left: auto;
     margin-right: auto;
 }
+/* Får billedet til at være centreret på siden */
+.løbbanner img {
+  width: 100%;
+}
 .løbbannertekst {
     position: absolute;
     top: 50%;
@@ -108,12 +116,17 @@ html {
 .løbbannertekst a {
   color: #ffffff;
   background-color: rgb(78,96,128);
+  border: 5px solid rgb(78,96,128);
   text-decoration: none;
-    color: #ffffff;
     text-align: center;
     padding: 10px 40px 10px 40px;
     border-radius: 40px;
     cursor:pointer;
+}
+.løbbannertekst a:hover{
+  color: rgb(78,96,128);
+  background-color: #ffffff;
+  border: 5px solid rgb(78,96,128);
 }
 .løbbeskrivelse {
   color: #000000;
@@ -125,18 +138,26 @@ html {
 .løbbeskrivelse a {
   color: #ffffff;
   background-color: rgb(78,96,128);
+  border: 5px solid rgb(78,96,128);
   text-decoration: none;
-    color: #ffffff;
     text-align: center;
     padding: 10px 40px 10px 40px;
     border-radius: 40px;
     cursor:pointer;
 }
+.løbbeskrivelse a:hover{
+  color: rgb(78,96,128);
+  background-color: #ffffff;
+  border: 5px solid rgb(78,96,128);
+}
+
 
   /* Lay in a straight line */
 .slideshowcolumn {
   float: left;
   width: 20%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .slideshowcolumn img {
   width: 100%;
@@ -286,9 +307,25 @@ img.hover-shadow {
   flex: auto;
   text-align: center;
 }
+.contentgriditem a {
+  color: #ffffff;
+  background-color: rgb(78,128,96);
+  border: 5px solid rgb(78,128,96);
 
+  text-decoration: none;
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    border-radius: 40px;
+    cursor:pointer;
+}
+.contentgriditem a:hover{
+  color: rgb(78,128,96);
+  background-color: #ffffff;
+  border: 5px solid rgb(78,128,96);
+}
 .greenbox {
-  background-color: rgba(78,128,96,0.25);
+  background-color: rgba(78,128,96,0.50);
+  color: #ffffff;
   text-align: center;
   display: block;
 }
@@ -296,11 +333,6 @@ img.hover-shadow {
   background-color: #FFFFFF;
   text-align: center;
   display: block;
-}
-  .bluebox {
-    background-color: rgba(78,96,128,0.25);
-    text-align: center;
-    display: block;
 }
 .secondgreenbox {
   background-color: rgba(78,128,96,0.25);
@@ -317,20 +349,35 @@ img.hover-shadow {
   text-align: center;
   display: block;
 }
-
+.bluebox {
+  background-color: rgba(173,216,230, 0.8);
+  text-align: center;
+  display: block;
+  width: 100%;
+}
 .purplebox {
-  background-color: rgba(128,78,112,0.25);
+  background-color: rgba(128,78,112,0.55);
+  text-align: center;
+  color: white;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .kontakttitel {
   text-align: center;
   font-family: 'poppins,bold';
   font-size: 30pt;
-  color: rgb(128, 78, 112);
+  color: #ffffff;
 }
-
+.omvrøgumtitel {
+  text-align: center;
+  font-family: 'poppins,bold';
+  font-size: 30pt;
+  color: #ffffff;
+}
 
   .bluetransbox {
       position: absolute;
@@ -359,32 +406,6 @@ img.hover-shadow {
     	cursor:pointer;
     }
 
-    .purplebox {
-  background-color: rgba(128,78,112,0.55);
-  text-align: center;
-  color: white;
-  width: 80%;
-  height: 80%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.kontakttitel {
-  text-align: center;
-  font-family: 'poppins,bold';
-  font-size: 30pt;
-  color: #ffffff;
-}
-.omvrøgumtitel {
-  text-align: center;
-  font-family: 'poppins,bold';
-  font-size: 30pt;
-  color: #ffffff;
-}
-
-
-
     .dkloeb {
       width: 100%;
     position: absolute;
@@ -397,63 +418,11 @@ img.hover-shadow {
       text-align: center;
     }
 
-
-    body {
-        font-family: Arial, Helvetica, sans-serif;
-
+    .bluebox {
+      background-color: rgba(78,128,96,0.25);
+      text-align: center;
+      position: absolute;
     }
-
-    * {
-        box-sizing: border-box;
-    }
-
-    /* Add padding to containers */
-    .container {
-        padding: 16px;
-        background-color: white;
-    }
-
-    /* Full-width input fields */
-    input[type=text], input[type=password] {
-        width: 100%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: #f1f1f1;
-    }
-
-    input[type=text]:focus, input[type=password]:focus {
-        background-color: #ddd;
-        outline: none;
-    }
-
-    /* Overwrite default styles of hr */
-    hr {
-        border: 1px solid #f1f1f1;
-        margin-bottom: 25px;
-    }
-
-    /* Set a style for the submit button */
-    .submit{
+    .minigolfproduktion img{
       width: 100%;
-      color: #216393;
-      background-color: white;
-      padding: 12px 20px;
-      border: 3px solid #216393;
-      border-radius: 4px;
-      cursor:pointer;
-      font-family: 'Cabin Sketch', bold;
-      font-size: 20px;
-    }
-
-    /* Add a blue text color to links */
-    a {
-        color: dodgerblue;
-    }
-
-    /* Set a grey background color and center the text of the "sign in" section */
-    .signin {
-        background-color: #f1f1f1;
-        text-align: center;
     }
