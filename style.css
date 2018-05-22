@@ -286,6 +286,7 @@ img.hover-shadow {
   flex: auto;
   text-align: center;
 }
+
 .greenbox {
   background-color: rgba(78,128,96,0.25);
   text-align: center;
@@ -295,6 +296,11 @@ img.hover-shadow {
   background-color: #FFFFFF;
   text-align: center;
   display: block;
+}
+  .bluebox {
+    background-color: rgba(78,96,128,0.25);
+    text-align: center;
+    display: block;
 }
 .secondgreenbox {
   background-color: rgba(78,128,96,0.25);
@@ -352,7 +358,7 @@ img.hover-shadow {
     	border-radius: 40px;
     	cursor:pointer;
     }
-    
+
 
     .dkloeb {
       width: 100%;
