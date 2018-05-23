@@ -155,6 +155,17 @@
      <div class="footeritem"><h1><b>Nyhedsbrev:</b></h1>
        <p><br/><br/><br/><br/><br/></p>
  </div>
+
+ <label for="email"><b>email</b></label>
+         <input type="text" placeholder="indsæt din email" name="email" required>
+         <button onclick="myFunction()">TILMELD NYHEDSBREV</button>
+   <p id="demo"></p>
+         </div>
+       </div>
+     </div>
+   </div>
+   </div>
+
  </footer>
 
  <button onclick="topFunction()" id="scrollBtn" title="Gå til toppen">TOP</button>
@@ -174,6 +185,9 @@
      document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
  }
+ function myFunction() {
+      alert("Du har nu tilmeldt dig nyhedsbrevet ångående begivenheder og aktiviteter i Vrøgum");
+  }
 </script>
 </body>
 </html>
