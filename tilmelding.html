@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="da" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Vrøgumløb</title>
@@ -23,25 +23,20 @@
   <div class="bluetransbox">
     <div class="centertextinbox">
   <form action="/action_page.php">
-
       <h1>Registrer dig her</h1>
       <p>Indtast dit navn, så deltager du automatisk i begivenheden.</p>
       <br/><hr><br/>
-
-
-  <label for="fullname"><b>Dit fulde navn:</b></label><br/><br/>
+  <label id="fullname"><b>Dit fulde navn:</b></label><br/><br/>
       <input type="text" placeholder="Indtast dit fulde navn" name="full name" required><br/><br/>
       <button id="tilmeldBtn">Tilmeld dig begivenheden</button>
 <p id="yesnomail"></p>
-      </div>
-    </div>
-  </div>
+</form>
 </div>
 </div>
 </div>
-  </form>
+
   <script>
-document.getElementById("tilmeldBtn").addEventListener("click", myFunction);
+document.getElementById("tilmeldBtn").addEventListener("click", loebFunction);
 function loebFunction(event) {
     event.preventDefault();
     var txt;
@@ -53,5 +48,4 @@ function loebFunction(event) {
     }
     document.getElementById("yesnomail").innerHTML = txt;
 }
-
 </script>
