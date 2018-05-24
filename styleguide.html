@@ -20,23 +20,42 @@ form{
   text-align: center;
 
 }
+body{
+  text-align: center;
+}
 
     </style>
 
     <p> header, med push to call action</P>
     <div class="topnav">
     <ul>
-         <li><a href="omvrøgum.html">OM VRØGUM</a></li>
-         <li><a href="vrøgumløb.html">VRØGUM LØB</a></li>
+         <li><a href="omvroegum.html">OM VRØGUM</a></li>
+         <li><a href="vroegumloeb.html">VRØGUM LØB</a></li>
          <li><a href="index.html">HJEM</a></li>
          <li><a href="begivenheder.html">BEGIVENHEDER</a></li>
          <li><a href="kontakt.html">KONTAKT</a></li>
        </ul>
   </div>
+  &lt; div class="topnav"&gt;<br/>
+  &lt;ul &gt; <br/>
+  &lt;li&gt;&lt; a href="omvrøgum.html"&gt;OMVRØGUM&lt;/a&gt;&lt;/li&gt;
+  <br/>
+  &lt;li&gt;&lt; a href="vrøgumløb.html"&gt;VRØGUM LØB&lt;/a&gt;&lt;/li&gt;
+  <br/>
+  &lt;li&gt;&lt; a href="index.html#""&gt;HJEM&lt;/a&gt;&lt;/li&gt;
+  <br/>
+  &lt;li&gt;&lt; a href="begivenheder.html"&gt;BEGIVENHEDER&lt;/a&gt;&lt;/li&gt;
+  <br/>
+  &lt;li&gt;&lt; a href="kontakte.html#&gt;KONTAKT&lt;/a&gt;  &lt;/li&gt;<br/>
+  &lt;/ul&gt;<br/>
+  &lt;/div&gt;
   <hr>
   <p> Logo, med push to call action</p>
   <div class="topnav">
   <a href="index.html"><img src="medie/logovrogum.png" alt="logo"></a>
+  <br/>
+  &lt;div class="topnav"&gt;<br/>
+  &lt; a href="index.html&gt;&lt;img src="medie/logovrogum.png"&gt;&lt;/a&gt;
 </div>
 <hr>
 <p> Pus to call action, "læs mere"</p>
@@ -45,33 +64,149 @@ form{
 <a href="begivenheder.html">LÆS MERE</a></p>
 </div>
 </div>
+&lt;  div class="flexbox"&gt;&lt;/div&gt;
+<br/>
+&lt;  div class="flexitem"&gt;&lt;/div&gt;
+<br/>
+&lt; a href="begivenheder.html#&gt;LÆS MERE&lt;/a&gt;
 <hr>
 <p> Pus to call action, "deltag her"</p>
 <div class="flexbox">
  <div class="flexitem">
-<a href="begivenheder.html">DELTAG HER</a></p>
+<a href="tilmelding.html">DELTAG HER</a></p>
 </div>
 </div>
+&lt;  div class="flexbox"&gt;&lt;/div&gt;
+<br/>
+&lt;  div class="flexitem"&gt;&lt;/div&gt;
+<br/>
+&lt; a href="tilmelding.html#&gt;DELTAG HER&lt;/a&gt;
 <hr>
-<p> indsæt tekst på siden<p>
+<p> indsæt tekst på siden</p>
+  &lt;p&gt;indsæt tekst&lt;/p&gt;
   <hr>
-<p> indsæt link på siden, fx. denne <a href="index.html">HJEM</a><p>
+<p> indsæt link på siden, fx. denne <a href="index.html">HJEM</a></p>
+  &lt; a href="index.html#""&gt;HJEM&lt;/a&gt;
   <hr>
-<p> insæt en boks der indikere ny emne</p>
-<div class="greenbox">
-  <h2> insæt tekst og billeder her<h2>
-    <h3> mulighed for at ændre farve på boksen</h3>
-    <br/> <br/>
+  <p> Tildmeldingsboks</p>
+  <form action="/action_page.php">
+  <label for="fullname"><b>Dit fulde navn:</b></label><br/><br/>
+      <input type="text" placeholder="Indtast dit fulde navn" name="full name" required><br/><br/>
+      <button id="tilmeldBtn">Tilmeld dig begivenheden</button>
+  <p id="yesnomail"></p>
+  </form>
+  &lt;label for="fullname"&gt;&lt;b&gt;indsæt data:&lt;/b&gt;&lt;/label&gt;<br/>
+  &lt;input id="text" placeholder="Indtast dit fulde navn" name="full name" required&gt;<br/>
+  &lt;button id="tilmeldBtn"&gt;Tilmeld dig begivnhed&lt;/button&gt;<br/>
+  &lt;p id"yesnomail"&gt;&lt;/p&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/form&gt; <br/>
+<p> JavaScript</p>
+&lt;script&gt;<br/>
+document.getElementById("tilmeldBtn").addEventListener("click", myFunction);<br/>
+function myFunction(event) {<br/>
+  event.preventDefault();<br/>
+  var txt;<br/>
+  var person = prompt(" Du er nu tilmeldt begivenheden, venligst insæt din email, hvis du ønsker flere oplysninger omkring begivenheden:", "email");<br/>
+  if (person == null || person == "") {<br/>
+      txt = "du sagde nej tak til at få flere oplysninger via email, du er dog stadig tilmeldt begivenheden.";<br/>
+  } else {<br/>
+      txt = "Der er nu sendt en mail til " + person + " med flere oplysninger omkring begivenheden, forsat god dag.";<br/>
+  }<br/>
+  document.getElementById("yesnomail").innerHTML = txt;<br/>
+}<br/>
+&lt;/script&gt;
+  <hr>
+
+  <p> Indsæt billede <p>
+  <div class="omvroegumloebet">
+  <img src="medie/storloebbanner.jpg" alt="Løb">
 </div>
+&lt; div class="omvroegumloebet"&gt;&lt;/div&gt;
+<br/>
+&lt;img src="medie/logovrogum.png"&gt;
+  <hr>
+  <p> Indsæt boks på billede <p>
+  <div class="omvroegumloebet">
+  <img src="medie/storloebbanner.jpg" alt="Løb">
+  <div class="bluetransbox">
+  </div>
+</div>
+&lt; div class="bluetransbox"&gt;&lt;/div&gt;
+<hr><p> Indsæt boks på billede samt tekst og push to call action knap. <p>
+  <div class="omvroegumloebet">
+  <img src="medie/storloebbanner.jpg" alt="Løb">
+  <div class="bluetransbox">
+    <div class="centertextinbox">
+  <form action="/action_page.php">
+
+      <h1>Registrer dig her</h1>
+      <p>Indtast dit navn, så deltager du automatisk i begivenheden.</p>
+      <br/><hr><br/>
+
+  <label for="fullname"><b>Dit fulde navn:</b></label><br/><br/>
+      <input type="text" placeholder="Indtast dit fulde navn" name="full name" required><br/><br/>
+      <button id="tilmeldBtn">Tilmeld dig begivenheden</button>
+  <p id="yesnomail"></p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </form>
+  &lt; div class="centertextinbox"&gt;<br/>
+  &lt; form action="action_page.php"&gt;<br/>
+  &lt; h1&gt;Overskrift&lt;/h1&gt;<br/>
+  &lt;p&gt;indhold&lt;/p&gt;<br/>
 
 <hr>
-<p> Tildmeldingsboks</p>
-<form action="/action_page.php">
-<label for="fullname"><b>Dit fulde navn:</b></label><br/><br/>
-    <input type="text" placeholder="Indtast dit fulde navn" name="full name" required><br/><br/>
-    <button id="tilmeldBtn">Tilmeld dig begivenheden</button>
-<p id="yesnomail"></p>
-</form>
+<p> insæt en boks der indikere ny emne</p>
+<div class="greenbox">
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>
+&lt;div class="greenbox"&gt; <br/>
+&lt;br/&gt;<br/>
+&lt;br/&gt;<br/>
+&lt;br/&gt;<br/>
+&lt;/div&gt;
+<hr>
+<p> ny boks emne, med billede, tekst og call to push action<p>
+<div class="greenbox">
+<div class="flexbox">
+  <div class="flexitem">
+    <img src="medie/fiskeri.jpg" alt="Et barn der fisker">
+  </div>
+  <div class="flexitem">
+<p> indsæt tekst her <p>
+      <a href="tilmelding.html">TILMELD DIG HER</a>
+    </p>
+  </div>
+</div>
+</div>
+&lt;div class="flexbox"&gt; <br/>
+&lt;div class="flexitem"&gt; <br/>
+&lt;img src="medie/fiskeri.jpg" alt="Et barn der fisker"&gt; <br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;<br/>
+&lt;/div&gt;
+
 <hr>
 
 <p> Nyhedsbrev<p>
@@ -83,10 +218,95 @@ form{
   <br/>
   <button onclick="tilmeldFunction()" id="emailBtn">TILMELD NYHEDSBREV</button>
 <p id="demo"></p>
+&lt;label for="email"&gt;&lt;b&gt;Indtast din email:&gt;/b&gt;&lt;/label&gt;<br/>
+&lt;br/&gt; <br/>
+&lt;inpur rtpe="text" placeholder=" indsæt din email" name="email" required&gt; <br/>
+&lt;br/&gt; <br/>
+&lt;br/&gt; <br/>
+&lt;button oneclick="tilmeldFunction"()" id="emailBtn"&gt;TILMELD NYHEDSBREV&lt;/button&gt; <br/>
+&lt;p id="demo"&gt;&lt;/p&gt; <br/>
+<p> JavaScript</p>
+&lt;script&gt;<br/>
+function tilmeldFunction() { <br/>
+    alert("Du har nu tilmeldt dig nyhedsbrevet ångående begivenheder og aktiviteter i Vrøgum"); <br/>
+}<br/>
+&lt;/script&gt; <br/>
 <hr>
-<p> Boksen hvor der står top som scroller siden op i toppen igen. er placeret nede i højre hjørne. den går følger med på hele styleguide siden.<p>
-<button onclick="topFunction()" id="scrollBtn" title="Gå til toppen">TOP</button>
+<p> Boksen hvor der står top som scroller siden op i toppen igen. er placeret nede i højre hjørne. den går følger med på hele styleguide siden.</p> <br/>
+<button onclick="topFunction()" id="scrollBtn" title="Gå til toppen">TOP</button> <br/>
+&lt;button oneclick="topFunction"()" id="scrollBtn" title="Gå til toppen"&gt;Top&lt;/button&gt; <br/>
+
+<p> JavaScript </p>
+&lt;script&gt;<br/>
+window.onscroll = function() {scrollFunction()}; <br/>
+<br/>
+function scrollFunction() {<br/>
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {<br/>
+        document.getElementById("scrollBtn").style.display = "block";<br/>
+    } else {<br/>
+        document.getElementById("scrollBtn").style.display = "none";<br/>
+    }<br/>
+}<br/>
+&lt;script&gt;
 <hr>
+<p> footer med push to call action<p>
+  <footer>
+      <div class="footeritem">
+        <div class="bottomnav">
+          <ul><h1><b>Navigation:</b></h1>
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="omvrøgum.html">Om Vrøgum</a></li>
+            <li><a href="vrøgumløb.html">Vrøgum Løb</a></li>
+            <li><a href="begivenheder.html">Begivenheder</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+      </div>
+    </div>
+      <div class="footeritem"><h1><b>Kontakt:</b></h1>
+        <p><b>telefon:</b><br/> 12345678<br/>
+        <b>e-mail:</b><br/> vrøgumby@mail.dk<br/><br/></p>
+      </div>
+      <div class="footeritem"><h1><b>Nyhedsbrev:</b></h1>
+  <label for="email"><b>indsæt din email</b></label>
+  <br/>
+  <br/>
+          <input type="text" placeholder="indsæt din email" name="email" required>
+          <br/>
+          <br/>
+          <button onclick="myFunction()">TILMELD NYHEDSBREV</button>
+    <p id="demo"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  &lt;footer&gt; <br/>
+  &lt; div class="footeritem"&gt; <br/>
+  &lt; div class="bottomnav"&gt; <br/>
+  &lt;ul&gt;&lt;h1&gt;&lt;b&gt;Navigation:&lt;/b&gt;&lt;h1&gt;
+  &lt;li&gt;&lt; a href="omvrøgum.html"&gt;OMVRØGUM&lt;/a&gt;&lt;/li&gt;
+  <br/>
+  &lt;li&gt;&lt; a href="vrøgumløb.html"&gt;VRØGUM LØB&lt;/a&gt;&lt;/li&gt;
+  <br/>
+  &lt;li&gt;&lt; a href="index.html#""&gt;HJEM&lt;/a&gt;&lt;/li&gt;
+  <br/>
+  &lt;li&gt;&lt; a href="begivenheder.html"&gt;BEGIVENHEDER&lt;/a&gt;&lt;/li&gt;
+  <br/>
+  &lt;li&gt;&lt; a href="kontakte.html#&gt;KONTAKT&lt;/a&gt;  &lt;/li&gt;<br/>
+  &lt;/ul&gt;<br/>
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt; div class="footeritem"&gt;<br/>
+  &lt;h1&gt;&lt;b&gt;kontakt:&lt;/b&gt;&lt;h1&gt;<br/>
+  &lt;p&gt;&lt;b&gt;telefon;&lt;/b&gt;&lt;br/&gt;12345678&lt;br/&gt;<br/>
+  &lt;b&gt;e-mail;&lt;/b&gt;&lt;br/&gt;vrøgumby@mail.dk&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;<br/>
+  &lt; div class="footeritem"&gt;&lt;h1&gt;&lt;b&gt;nyhedsbrev:&lt;/b&gt;&lt;h1&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  <br/>
+  <br/>
+  <br/>
+
 <script>
 window.onscroll = function() {scrollFunction()};
 
@@ -98,7 +318,7 @@ function scrollFunction() {
     }
 }
 document.getElementById("tilmeldBtn").addEventListener("click", myFunction);
-function myFunction(event) {
+function loebFunction(event) {
   event.preventDefault();
   var txt;
   var person = prompt(" Du er nu tilmeldt begivenheden, venligst insæt din email, hvis du ønsker flere oplysninger omkring begivenheden:", "email");
@@ -110,7 +330,7 @@ function myFunction(event) {
   document.getElementById("yesnomail").innerHTML = txt;
 }
 
-function myFunction() {
+function tilmeldFunction() {
     alert("Du har nu tilmeldt dig nyhedsbrevet ångående begivenheder og aktiviteter i Vrøgum");
 }
 </script>
