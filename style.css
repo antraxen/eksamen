@@ -308,7 +308,7 @@ img.hover-shadow {
   text-align: center;
   font-size: 30pt;
 }
-.contentgrid {
+.flexbox {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -319,13 +319,13 @@ img.hover-shadow {
   height: 500px;
   width: 80%;
 }
-.contentgrid .contentgriditem {
+.flexitem {
   background-position: center;
   background-size: contain;
   flex: auto;
   text-align: center;
 }
-.contentgrid .contentgriditem a {
+.flexitem a {
   color: #ffffff;
   background-color: rgb(78,128,96);
   border: 5px solid rgba(78,128,96,1);
@@ -335,7 +335,7 @@ img.hover-shadow {
   border-radius: 40px;
   cursor:pointer;
 }
-.contentgrid .contentgriditem a:hover{
+.flexitem a:hover{
   color: rgb(78,128,96);
   background-color: #ffffff;
   border: 5px solid rgb(78,128,96);
