@@ -16,7 +16,10 @@
       font-size: 30px;
       padding-top: 50px;
     }
+form{
+  text-align: center;
 
+}
 
     </style>
 
@@ -37,19 +40,23 @@
 </div>
 <hr>
 <p> Pus to call action, "læs mere"</p>
-<div class="contentgrid">
- <div class="contentgriditem">
+<div class="flexbox">
+ <div class="flexitem">
 <a href="begivenheder.html">LÆS MERE</a></p>
 </div>
 </div>
 <hr>
 <p> Pus to call action, "deltag her"</p>
-<div class="contentgrid">
- <div class="contentgriditem">
-<a href="begivenheder.html">LÆS MERE</a></p>
+<div class="flexbox">
+ <div class="flexitem">
+<a href="begivenheder.html">DELTAG HER</a></p>
 </div>
 </div>
 <hr>
+<p> indsæt tekst på siden<p>
+  <hr>
+<p> indsæt link på siden, fx. denne <a href="index.html">HJEM</a><p>
+  <hr>
 <p> insæt en boks der indikere ny emne</p>
 <div class="greenbox">
   <h2> insæt tekst og billeder her<h2>
@@ -57,5 +64,56 @@
     <br/> <br/>
 </div>
 
+<hr>
+<p> Tildmeldingsboks</p>
+<form action="/action_page.php">
+<label for="fullname"><b>Dit fulde navn:</b></label><br/><br/>
+    <input type="text" placeholder="Indtast dit fulde navn" name="full name" required><br/><br/>
+    <button id="tilmeldBtn">Tilmeld dig begivenheden</button>
+<p id="yesnomail"></p>
+</form>
+<hr>
+
+<p> Nyhedsbrev<p>
+
+  <label for="email"><b>Indtast din email:</b></label>
+  <br/>
+  <input type="text" placeholder="indsæt din email" name="email" required>
+  <br/>
+  <br/>
+  <button onclick="tilmeldFunction()" id="emailBtn">TILMELD NYHEDSBREV</button>
+<p id="demo"></p>
+<hr>
+<p> Boksen hvor der står top som scroller siden op i toppen igen. er placeret nede i højre hjørne. den går følger med på hele styleguide siden.<p>
+<button onclick="topFunction()" id="scrollBtn" title="Gå til toppen">TOP</button>
+<hr>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        document.getElementById("scrollBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollBtn").style.display = "none";
+    }
+}
+document.getElementById("tilmeldBtn").addEventListener("click", myFunction);
+function myFunction(event) {
+  event.preventDefault();
+  var txt;
+  var person = prompt(" Du er nu tilmeldt begivenheden, venligst insæt din email, hvis du ønsker flere oplysninger omkring begivenheden:", "email");
+  if (person == null || person == "") {
+      txt = "du sagde nej tak til at få flere oplysninger via email, du er dog stadig tilmeldt begivenheden.";
+  } else {
+      txt = "Der er nu sendt en mail til " + person + " med flere oplysninger omkring begivenheden, forsat god dag.";
+  }
+  document.getElementById("yesnomail").innerHTML = txt;
+}
+
+function myFunction() {
+    alert("Du har nu tilmeldt dig nyhedsbrevet ångående begivenheder og aktiviteter i Vrøgum");
+}
+</script>
   </body>
+
 </html>
