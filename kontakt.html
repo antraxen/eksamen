@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Kontakt</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   </head>
   <body>
     <div class="topnav">
       <a href="index.html"><img src="medie/logovrogum.png" alt="logo"></a>
     <ul>
-         <li><a href="omvrøgum.html">OM VRØGUM</a></li>
-         <li><a href="vrøgumløb.html">VRØGUM LØB</a></li>
+         <li><a href="omvroegum.html">OM VRØGUM</a></li>
+         <li><a href="vroegumloeb.html">VRØGUM LØB</a></li>
          <li><a href="index.html">HJEM</a></li>
          <li><a href="begivenheder.html">BEGIVENHEDER</a></li>
          <li><a href="kontakt.html">KONTAKT</a></li>
@@ -24,13 +25,21 @@
       <u>KONTAKT</u></p>
           <div class="contentgrid">
             <div class="contentgriditem">
-              <p><b>telefon:</b><br/> 12345678<br/>
-              <b>e-mail:</b><br/> vrøgumby@mail.dk<br/></p>
+              <p><b>Du kan kontatke Vrøgum via følgende:</b><br/><br/><br/>
+                <b>Telefon:</b><br/>< 12345678<br/><br/><br/>
+              <b>Email:</b><br/> vrøgumby@mail.dk<br/><br/><br/></p>
             </div>
             <div class="contentgriditem">
-              <p><b>Følg os</b><br/>
-                <a href="#">Facebook</a><br/><br/>
-                  <b><u>tilmeld dig vores nyhedsbrev</u></b></p>
+              <p><b>Nyhedsbrev:</b><br/><br/>
+                Tilmeld dig vores nyhedsbrev<br/>
+                ved at indtaste din email herunder,<br/>
+                for at modtage emails omkring<br/>
+                nye begivenheder og aktiviteter<br/>
+                i byen Vrøgum.</p>
+                <input type="text" placeholder="Din email" name="email" required>
+                <br/>
+                <br/>
+                <button onclick="tilmeldFunction()" id="emailBtn">TILMELD NYHEDSBREV</button>
             </div>
           </div>
         </div>
@@ -38,28 +47,27 @@
       <footer>
           <div class="footeritem">
             <div class="bottomnav">
-              <ul><h1><b>Navigation:</b></h1>
-                <li><a href="index.html">Forside</a></li>
-                <li><a href="omvrøgum.html">Om Vrøgum</a></li>
-                <li><a href="vrøgumløb.html">Vrøgum Løb</a></li>
-                <li><a href="begivenheder.html">Begivenheder</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+              <ul><h1><b>NAVIGATION:</b></h1>
+                <li><a href="index.html"><b>Forside</b></a></li>
+                <li><a href="omvroegum.html"><b>Om Vrøgum</b></a></li>
+                <li><a href="vroegumloeb.html"><b>Vrøgum Løb</b></a></li>
+                <li><a href="begivenheder.html"><b>Begivenheder</b></a></li>
+                <li><a href="kontakt.html"><b>Kontakt</b></a></li>
               </ul>
           </div>
         </div>
-          <div class="footeritem"><h1><b>Kontakt:</b></h1>
-            <p><b>telefon:</b><br/> 12345678<br/>
-            <b>e-mail:</b><br/> vrøgumby@mail.dk<br/><br/></p>
+          <div class="footeritem"><h1><b>KONTAKT:</b></h1>
+            <p><b>Telefon:</b><br/> 12345678<br/><br/>
+            <b>Email:</b><br/> vrøgumby@mail.dk<br/></p>
           </div>
-          <div class="footeritem"><h1><b>Nyhedsbrev:</b></h1>
-      <label for="email"><b>indsæt din email</b></label>
+          <div class="footeritem"><h1><b>NYHEDSBREV:</b></h1>
+      <label for="email"><b>Indtast din email:</b></label>
       <br/>
       <br/>
-              <input type="text" placeholder="indsæt din email" name="email" required>
+              <input type="text" placeholder="Din email" name="email" required>
               <br/>
               <br/>
-              <button onclick="myFunction()">TILMELD NYHEDSBREV</button>
-        <p id="demo"></p>
+              <button onclick="tilmeldFunction()" id="emailBtn">TILMELD NYHEDSBREV</button>
               </div>
             </div>
           </div>
@@ -68,7 +76,7 @@
       </footer>
     <script>
 
-    function myFunction() {
+    function tilmeldFunction() {
       alert("Du har nu tilmeldt dig nyhedsbrevet ångående begivenheder og aktiviteter i Vrøgum");
   }
 

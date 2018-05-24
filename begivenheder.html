@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <title>Begivenheder</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   </head>
   <body>
      <div class="topnav">
        <a href="index.html"><img src="medie/logovrogum.png" alt="Logo"></a>
      <ul>
-          <li><a href="omvrøgum.html">OM VRØGUM</a></li>
-          <li><a href="vrøgumløb.html">VRØGUM LØB</a></li>
+          <li><a href="omvroegum.html">OM VRØGUM</a></li>
+          <li><a href="vroegumloeb.html">VRØGUM LØB</a></li>
           <li><a href="index.html">HJEM</a></li>
           <li><a href="begivenheder.html">BEGIVENHEDER</a></li>
           <li><a href="kontakt.html">KONTAKT</a></li>
@@ -19,7 +20,11 @@
 
 <div class="minigolfproduktion">
 <img src="medie/minigolf.gif" alt="minigolf">
-</div>
+<div class="centertextinbox"><h1>MINIGOLF</h1><br/>
+  <h3>ÅBNINGSFEST</h3>
+  <h2>FREDAG DEN 27 JULI</h2>
+  <h3>Klokken 12:00</h3>
+</div></div>
 
 <p class="andrebegivenheder"><u> ALLE BEGIVENHEDER</u></p>
  <div class="greenbox">
@@ -100,7 +105,7 @@
       til at løbe imod kræften, samt være med til Danmarks hyggeligste løb, så kan du  <br/>
        Vi glæder og til at se jer til Vrøgum Løbet.<br/><br/>
        <br/>
-       <a href="vrøgumløb.html">LÆS MERE</a>
+       <a href="vroegumloeb.html">LÆS MERE</a>
        <br/>
        <br/>
        <br/>
@@ -109,7 +114,7 @@
  </p>
    </div>
    <div class="contentgriditem">
-     <img src="medie/loebgroen.jpg" alt="løbgrøn">
+     <img src="medie/loebgroen.jpg" alt="Løb">
    </div>
  </div>
  </div>
@@ -139,29 +144,26 @@
  <footer>
      <div class="footeritem">
        <div class="bottomnav">
-         <ul><h1><b>Navigation:</b></h1>
-           <li><a href="index.html">Forside</a></li>
-           <li><a href="omvrøgum.html">Om Vrøgum</a></li>
-           <li><a href="vrøgumløb.html">Vrøgum Løb</a></li>
-           <li><a href="begivenheder.html">Begivenheder</a></li>
-           <li><a href="kontakt.html">Kontakt</a></li>
+         <ul><h1><b>NAVIGATION:</b></h1>
+           <li><a href="index.html"><b>Forside</b></a></li>
+           <li><a href="omvroegum.html"><b>Om Vrøgum</b></a></li>
+           <li><a href="vroegumloeb.html"><b>Vrøgum Løb</b></a></li>
+           <li><a href="begivenheder.html"><b>Begivenheder</b></a></li>
+           <li><a href="kontakt.html"><b>Kontakt</b></a></li>
          </ul>
      </div>
    </div>
-     <div class="footeritem"><h1><b>Kontakt:</b></h1>
-       <p><b>telefon:</b><br/> 12345678<br/>
-       <b>e-mail:</b><br/> vrøgumby@mail.dk<br/><br/></p>
+     <div class="footeritem"><h1><b>KONTAKT:</b></h1>
+       <p><b>Telefon:</b><br/> 12345678<br/>
+       <b>Email:</b><br/> vrøgumby@mail.dk<br/><br/></p>
      </div>
-     <div class="footeritem"><h1><b>Nyhedsbrev:</b></h1>
- <label for="email"><b>indsæt din email</b></label>
+     <div class="footeritem"><h1><b>NYHEDSBREV:</b></h1>
+ <label for="email"><b>Indtast din email:</b></label>
  <br/>
- <br/>
-         <input type="text" placeholder="indsæt din email" name="email" required>
-         <br/>
-         <br/>
-         <button onclick="myFunction()">TILMELD NYHEDSBREV</button>
-   <p id="demo"></p>
-         </div>
+         <input type="text" placeholder="Din email" name="email" required>
+         <br/><br/>
+         <button onclick="tilmeldFunction()" id="emailBtn">TILMELD NYHEDSBREV</button>
+         <br/><br/></div>
        </div>
      </div>
    </div>
@@ -185,8 +187,8 @@
      document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
  }
- function myFunction() {
-      alert("Du har nu tilmeldt dig nyhedsbrevet ångående begivenheder og aktiviteter i Vrøgum");
+ function tilmeldFunction() {
+      alert("Du har nu tilmeldt dig nyhedsbrevet, ångående begivenheder og aktiviteter i Vrøgum");
   }
 </script>
 </body>

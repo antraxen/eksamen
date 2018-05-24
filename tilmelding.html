@@ -4,40 +4,44 @@
     <meta charset="utf-8">
     <title>Vrøgumløb</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+          <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   </head>
   <body>
     <div class="topnav">
       <a href="index.html"><img src="medie/logovrogum.png" alt="logo"></a>
     <ul>
-         <li><a href="omvrøgum.html">OM VRØGUM</a></li>
-         <li><a href="vrøgumløb.html">VRØGUM LØB</a></li>
+         <li><a href="omvroegum.html">OM VRØGUM</a></li>
+         <li><a href="vroegumloeb.html">VRØGUM LØB</a></li>
          <li><a href="index.html">HJEM</a></li>
          <li><a href="begivenheder.html">BEGIVENHEDER</a></li>
          <li><a href="kontakt.html">KONTAKT</a></li>
        </ul>
   </div>
+
+  <div class="omvroegumloebet">
+  <img src="medie/storloebbanner.jpg" alt="Løb">
   <div class="bluetransbox">
-  <div class="contentgrid">
-    <div class="contentgriditem">
+    <div class="centertextinbox">
   <form action="/action_page.php">
 
       <h1>Registrer dig her</h1>
-      <p>Indsæt dit navn, så deltager du automatisk i begivenheden.</p>
-      <hr>
+      <p>Indtast dit navn, så deltager du automatisk i begivenheden.</p>
+      <br/><hr><br/>
 
 
-  <label for="fullnae"><b>navn</b></label>
-      <input type="text" placeholder="indsæt dit fulde navn" name="full name" required>
-      <button id="myBtn">Tilmeld dig begivenhed</button>
-<p id="demo"></p>
+  <label for="fullname"><b>Dit fulde navn:</b></label><br/><br/>
+      <input type="text" placeholder="Indtast dit fulde navn" name="full name" required><br/><br/>
+      <button id="tilmeldBtn">Tilmeld dig begivenheden</button>
+<p id="yesnomail"></p>
       </div>
     </div>
   </div>
 </div>
 </div>
+</div>
   </form>
   <script>
-document.getElementById("myBtn").addEventListener("click", myFunction);
+document.getElementById("tilmeldBtn").addEventListener("click", myFunction);
 function myFunction(event) {
     event.preventDefault();
     var txt;
@@ -47,8 +51,7 @@ function myFunction(event) {
     } else {
         txt = "Der er nu sendt en mail til " + person + " med flere oplysninger omkring begivenheden, forsat god dag.";
     }
-    document.getElementById("demo").innerHTML = txt;
-
+    document.getElementById("yesnomail").innerHTML = txt;
 }
 
 </script>
