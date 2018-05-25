@@ -40,9 +40,9 @@ document.getElementById("tilmeldBtn").addEventListener("click", loebFunction);
 function loebFunction(event) {
     event.preventDefault();
     var txt;
-    var person = prompt(" Du er nu tilmeldt begivenheden, venligst insæt din email, hvis du ønsker flere oplysninger omkring begivenheden:", "email");
+    var person = prompt(" Du er nu tilmeldt begivenheden, venligst insæt din e-mail, hvis du ønsker flere oplysninger omkring begivenheden:", "email");
     if (person == null || person == "") {
-        txt = "du sagde nej tak til at få flere oplysninger via email, du er dog stadig tilmeldt begivenheden.";
+        txt = "Du sagde nej tak til, at få flere oplysninger via email. Du er dog stadig tilmeldt begivenheden.";
     } else {
         txt = "Der er nu sendt en mail til " + person + " med flere oplysninger omkring begivenheden, forsat god dag.";
     }

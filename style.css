@@ -1,6 +1,6 @@
 html {
   font-family: 'poppins';
-  font-size: 14pt;
+  font-size: 12pt;
   }
 .lyngsektion img {
   width: 100%;
@@ -25,7 +25,7 @@ html {
 .imgnav ul li a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 20pt;
+  font-size: 14pt;
   text-align: center;
   padding: 25px;
 }
@@ -55,7 +55,7 @@ html {
 .topnav ul li a {
   text-decoration: none;
   color: #000000;
-  font-size: 20pt;
+  font-size: 14pt;
   text-align: center;
   padding: 25px;
 }
@@ -106,7 +106,7 @@ footer {
   background-color: rgba(128,78,112,0.6);
   color: #ffffff;
   font-family: 'poppins';
-  font-size: 14pt;
+  font-size: 12pt;
   margin: auto;
 	padding: 20px;
   text-align: center;
@@ -146,8 +146,6 @@ footer {
   width: 100%;
 }
 .loebbannertekst {
-  font-family: 'poppins';
-  font-size: 30pt;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -155,7 +153,7 @@ footer {
 }
 .loebbannertekst a {
   font-family: 'poppins';
-  font-size: 16pt;
+  font-size: 14pt;
   color: #ffffff;
   background-color: rgb(78,96,128);
   border: 5px solid rgba(78,96,128,1);
@@ -173,13 +171,13 @@ footer {
 .loebbeskrivelse {
   color: #000000;
   font: 'poppins';
-  font-size: 16pt;
+  font-size: 12pt;
   margin: auto;
   text-align: center;
 }
 .loebbeskrivelse a {
   font-family: 'poppins';
-  font-size: 16pt;
+  font-size: 14pt;
   color: #ffffff;
   background-color: rgb(78,96,128);
   border: 5px solid rgba(78,96,128,1);
@@ -276,7 +274,7 @@ footer {
 }
 .caption-container {
   font-family: 'poppins';
-  font-size: 16pt;
+  font-size: 14pt;
   text-align: center;
   background-color: rgb(78,96,128);
   padding: 2px 16px;
@@ -413,6 +411,7 @@ img.hover-shadow {
   position: absolute;
   background-color: rgba(78,96,128,0.6);
   text-align: center;
+  font-size: 20pt;
   width: 80%;
   height: 80%;
   top: 50%;
